@@ -3,7 +3,7 @@
     padding: 0px;
     margin: 0;
 }
-div >h1{
+div >h2{
     width: 100%;
     text-align: center;
     font-size: 175%;
@@ -15,9 +15,9 @@ section{
     margin: 20px;
 
 }
-section > h2{
+section > h3{
     margin-top: 0px;
-    width: 200px;
+    width: 100px;
     right: 0px;
     top: 0px;
     text-align: center;
@@ -26,11 +26,11 @@ section > h2{
 section > p{
     padding: 50px 10px 10px 10px;
 }
-h2 {
-	font-size: 125%;
+h3 {
+	font-size: 120%;
 }
 
-section, section > h2 {
+section, section > h3 {
 	border: 1px solid black;
 }
 
@@ -38,27 +38,27 @@ section, section > h2 {
     width: 100%;
 }
 
-#section-1 {
+.sec1 {
 	background-color: #00E1EF;
 }
 
-#section-2 {
+.sec2 {
 	background-color: #00E1FF;
 }
 
-#section-3 {
+.sec3 {
 	background-color: #80D7FF;
 }
 
-#section-1 > h2 {
+.sec1 > h3 {
 	background-color: #18ad60;
 }
 
-#section-2 > h2 {
+.sec2 > h3 {
 	background-color: #250bb7;
 }
 
-#section-3 > h2 {
+.sec3 > h3 {
 	background-color: #9bd113;
 }
 
