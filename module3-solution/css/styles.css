@@ -1,0 +1,69 @@
+
+
+div > p {
+	text-align: justify;
+}
+
+.content-cell {
+	background-color:brown;
+	margin-bottom: 15px;
+	padding: 10px 15px;
+    color: white;
+}
+
+.content-cell h2 {
+	margin-top: -5px;
+}
+
+/* medium screen */
+@media (min-width:768px){
+	#collapsable-nav {
+		visibility: hidden;
+	}
+}
+
+/* Extra small screen */
+@media (max-width:767px){
+	
+	.navbar-brand {
+		margin-left: 15px;
+	}
+	
+	.content-cell {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	#collapsable-nav {
+		background-color: yellow;
+	}
+	
+	#nav-list {		
+		margin-bottom: 1px;
+		margin-top: 0px;
+	}
+	
+	#nav-list li{
+		text-align: center;
+		border: 1px solid black;
+		margin-bottom:-1px;
+	}
+	#nav-list li:hover{
+		font-weight: bold;
+		background-color: magenta;
+	}
+}
+.end{
+    float: left;
+    color: black;
+    font-weight: bold;
+    
+}
+.top{
+    font-weight: bolder;
+    color: magenta;
+}
+.text-center{
+    margin-top: -1px;
+    margin-bottom: 15px;
+}
