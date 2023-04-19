@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>NHIS</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=cb606d99bb2418df19b6bc818b41e412">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body id="page-top">
+<div id="wrapper">
+  <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+    <div class="container-fluid d-flex flex-column p-0 sticky-top"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+            <div class="sidebar-brand-icon rotate-n-15"><img src="https://img.icons8.com/avantgarde/55/null/heart-with-pulse.png"/></div>
+            <div class="sidebar-brand-text mx-3"><span>NHIS</span></div>
+        </a>
+        <hr class="sidebar-divider my-0">
+        <ul class="navbar-nav text-light" id="accordionSidebar">
+            <li class="nav-item"><a class="nav-link active" href="doctor.html"><i class="fas fa-tachometer-alt"></i><span>Doctor Dashboard</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="patient.html"><i class="fas fa-tachometer-alt"></i><span>Patient Dashboard</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="./Insurance/template/insurance.html"><i class="fas fa-tachometer-alt"></i><span>Insurance Dashboard</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="plist.html"><i class="fas fa-table"></i><span>Patients</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="doctorlist.html"><i class="fas fa-table"></i><span>Doctors</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="chat.html"><i class="fas fa-comments"></i><span>Chat</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="calendar.html"><i class="fas fa-calendar-days"></i><span>Calendar</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="support.html"><i class="fas fa-headset"></i><span>Support</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="settings.html"><i class="fas fa-cogs"></i><span>Settings</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-right-from-bracket"></i><span>Log Out</span></a></li>
+        </ul>
+        <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+    </div>
+</nav>
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+            <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar">
+                <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                    <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                    </form>
+                    <ul class="navbar-nav flex-nowrap ms-auto">
+                        <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="me-auto navbar-search w-100">
+                                    <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                        <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="me-3">
+                                        <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">December 12th, 2021</span>
+                                        <p>A new monthly report is ready to download!</p>
+                                    </div>
+                                </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="me-3">
+                                        <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">January 27th, 2022</span>
+                                        <p>Your Health Insurance payment info has been updated</p>
+                                    </div>
+                                </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="me-3">
+                                        <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">May 2nd, 2022</span>
+                                        <p>Dr. Nelson Kaviha approoved your appointment request.</p>
+                                    </div>
+                                </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5">
+                                        <div class="bg-success status-indicator"></div>
+                                    </div>
+                                    <div class="fw-bold">
+                                        <div class="text-truncate"><span>Hi there! I have accepted the appointment request you made for the dental checkup.</span></div>
+                                        <p class="small text-gray-500 mb-0">Emily Ndambuki - 58m</p>
+                                    </div>
+                                </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div class="fw-bold">
+                                        <div class="text-truncate"><span>We have approved the Health Insurance request you made for the surgery.</span></div>
+                                        <p class="small text-gray-500 mb-0">NHIF - 1d</p>
+                                    </div>
+                                </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3">
+                                        <div class="bg-warning status-indicator"></div>
+                                    </div>
+                                    <div class="fw-bold">
+                                        <div class="text-truncate"><span>Last month&#39;s diagnosis looks great, I am very happy with the response so far, keep taking the medication!</span></div>
+                                        <p class="small text-gray-500 mb-0">Dr. Edgar Lumumba - 2d</p>
+                                    </div>
+                                </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg?h=35dc45edbcda6b3fc752dab2b0f082ea">
+                                        <div class="bg-success status-indicator"></div>
+                                    </div>
+                                    <div class="fw-bold">
+                                        <div class="text-truncate"><span>Your monthly health insurance transaction reports are available for download.</span></div>
+                                        <p class="small text-gray-500 mb-0">NHIS Team · 2w</p>
+                                    </div>
+                                </a><a class="dropdown-item text-center small text-gray-500" href="chat.html">Show All Messages</a>
+                                </div>
+                            </div>
+                            <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Moses Mtengo</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar3.jpeg"></a>
+                                <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="settings.html"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                    <h3 class="text-dark mb-0">Tune your Settings!</h3>
+                    <div class="justify-content-between align-items-center mb-4">
+                        <a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-upload fa-sm text-white-50"></i>&nbsp;Upload Records</a>
+                        <a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Download Transactions</a>
+                    </div>
+                </div>
+
+                <!-- Main -->
+    <main class="py-6 bg-surface-secondary">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-7 mx-auto">
+              <!-- Profile picture -->
+              <div class="card shadow border-0 mt-4 mb-10">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <a href="#" class="avatar avatar-lg bg-warning rounded-circle text-white">
+                            <img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656">
+                          <!-- <img alt="..." src="https://images.unsplash.com/photo-1579463148228-138296ac3b98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"> -->
+                        </a>
+                        <div class="ms-4">
+                          <span class="h4 d-block mb-0">Valerie Luna</span>
+                          <a href="#" class="text-sm font-semibold text-muted">View Profile</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ms-auto">
+                      <button type="button" class="btn btn-sm btn-neutral">Upload</button>
+                    </div>
+                  </div>
+                </div>
+              </div><br><br>
+              <div></div>
+              <!-- Form -->
+              <div class="mb-5">
+                <h5 class="mb-0">Contact Information</h5>
+              </div>
+              <form class="mb-6">
+                <div class="row mb-5">
+                  <div class="col-md-6">
+                    <div class="">
+                      <label class="form-label" for="first_name">First name</label>
+                      <input type="text" class="form-control" id="first_name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="">
+                      <label class="form-label" for="last_name">Last name</label>
+                      <input type="text" class="form-control" id="last_name">
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-5">
+                  <div class="col-md-6">
+                    <div class="">
+                      <label class="form-label" for="email">Email</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="">
+                      <label class="form-label" for="phone_number">Phone number</label>
+                      <input type="tel" class="form-control" id="phone_number">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="">
+                      <label class="form-label" for="address"> Home Address</label>
+                      <input type="text" class="form-control" id="address">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="">
+                      <label class="form-label" for="city">City</label>
+                      <input type="text" class="form-control" id="city">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="">
+                      <label class="form-label" for="country">County</label>
+                      <select class="form-select" id="country" placeholder="Your email" aria-label="Default select example">
+                        <option selected>Choose county</option>
+                        <option value="1">Nairobi</option>
+                        <option value="2">Busia</option>
+                        <option value="3">Mombasa</option>
+                        <option value="3">Kilifi</option>
+                        <option value="3">Nakuru</option>
+                        <option value="3">Meru</option>
+                        <option value="3">Uasin Gishu</option>
+                        <option value="3">Siaya</option>
+                        <option value="3">Homa Bay</option>
+                        <option value="3">Garissa</option>
+                        <option value="3">Wajir</option>
+                        <option value="3">Mandera</option>
+                        <option value="3">Marsabit</option>
+                        <option value="3">Isiolo</option>
+                        <option value="3">Machakos</option>
+                        <option value="3">Turkana</option>
+                        <option value="3">Nyeri</option>
+                        <option value="3">Baringo</option>
+                        <option value="3">Kirinyaga</option>
+                        <option value="3">Taita Taveta</option>
+                        <option value="3">Bungoma</option>
+                        <option value="3">Kakamega</option>
+                        <option value="3">Trans Nzoia</option>
+                        <option value="3">Samburu</option>
+                        <option value="3">West Pokot</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="">
+                      <label class="form-label" for="zip">Code</label>
+                      <input type="tel" class="form-control" id="zip">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="check_primary_address" id="check_primary_address">
+                      <label class="form-check-label" for="check_primary_address">
+                        Make this my default address
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-sm btn-neutral me-2">Cancel</button>
+                  <button type="submit" class="btn btn-sm btn-primary">Save</button>
+                </div>
+              </form>
+              <hr class="my-10" />
+              <!-- Individual switch cards -->
+              <div class="row g-6">
+                <div class="col-md-6">
+                  <div class="card shadow border-0">
+                    <div class="card-body">
+                      <h5 class="mb-2">Public profile</h5>
+                      <p class="text-sm text-muted mb-6">
+                        Making your profile public means that anyone on the website can see you.
+                      </p>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow border-0">
+                    <div class="card-body">
+                      <h5 class="mb-2">Show my email</h5>
+                      <p class="text-sm text-muted mb-6">
+                        Showing your e-mail adresses means that anyone on the network will be able to see you.
+                      </p>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div></div>
+                <br><br>
+                <div class="col-md-12">
+                  <div class="card shadow border-0">
+                    <div class="card-body d-flex align-items-center">
+                      <div>
+                        <h5 class="text-danger mb-2">Deactivate account</h5>
+                        <p class="text-sm text-muted">
+                          Once you delete your account, there is no going back. Please be careful.
+                        </p>
+                      </div>
+                      <div class="ms-auto">
+                        <button type="button" class="btn btn-sm btn-danger">Deactivate</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+                
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © NHIS 2023</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js?h=e2b0d57f2c4a9b0d13919304f87f79ae"></script>
+    <script src="assets/js/theme.js?h=79f403485707cf2617c5bc5a2d386bb0"></script>
+</body>
+
+</html>

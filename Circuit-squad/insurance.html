@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>NHIS</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=cb606d99bb2418df19b6bc818b41e412">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+     <!-- <div class="topbar"> -->
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0 sticky-top"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><img src="https://img.icons8.com/avantgarde/55/null/heart-with-pulse.png"/></div>
+                    <div class="sidebar-brand-text mx-3"><span>NHIS</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="doctor.html"><i class="fas fa-tachometer-alt"></i><span>Doctor Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="patient.html"><i class="fas fa-tachometer-alt"></i><span>Patient Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="insurance.html"><i class="fas fa-tachometer-alt"></i><span>Insurance Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="patient-list.html"><i class="fas fa-table"></i><span>Patients</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctorlist.html"><i class="fas fa-table"></i><span>Doctors</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat.html"><i class="fas fa-comments"></i><span>Chat</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="support.html"><i class="fas fa-headset"></i><span>Support</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="settings.html"><i class="fas fa-cogs"></i><span>Settings</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="insurance-register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-right-from-bracket"></i><span>Log Out</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12th, 2021</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">January 27th, 2022</span>
+                                                <p>You have new patient appointment requests</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">May 2nd, 2022</span>
+                                                <p>Dr. Rogers sent you some documents</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Hi there! I am having some red rash forming on my arm, any advice?</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Ndambuki - 58m</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>The Health Insurance request made by James Justin for the surgery has been approved.</span></div>
+                                                <p class="small text-gray-500 mb-0">NHIF - 1d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Hello i finished my medication and im feeling better, thanks.</span></div>
+                                                <p class="small text-gray-500 mb-0">Dr. Edgar Lumumba - 2d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg?h=35dc45edbcda6b3fc752dab2b0f082ea">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>We have added some new features!</span></div>
+                                                <p class="small text-gray-500 mb-0">NHIS Team · 2h</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Admin</span><img class="border rounded-circle img-profile" src="/assets/img/avatars/avatar2.jpeg" width="100"></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        
+                <div class="main-panel">
+                    <div class="content-wrapper">                   
+
+                      <div class="row">
+                        <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                            <h3 class="text-dark mb-0">Welcome to the insurance Dashboard!</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
+                        </div>
+                        <div class="col-md-3 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <p class="card-title text-md-center text-xl-left">Total Customers</p>
+                              <h3 class="text-md-center mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">34040</h3>
+                              <p class="mb-0 mt-2 text-center text-danger">0.12% <span class="text-black ms-1"><small>(30 days)</small></span></p>
+  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <p class="card-title text-md-center text-xl-left">Active Members</p>
+                              <h3 class="text-md-center mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">30033</h3>
+                              <p class="mb-0 mt-2 text-center text-danger">0.47% <span class="text-black ms-1"><small>(30 days)</small></span></p>  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <p class="card-title text-md-center text-xl-left">Hospital Visits</p>
+                              <h3 class="text-md-center mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">50789</h3>
+                              <p class="mb-0 mt-2 text-center text-success">64.00%<span class="text-black ms-1"><small>(30 days)</small></span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <p class="card-title text-md-center text-xl-left">Returns</p>
+                              <h3 class="text-md-center mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">44040</h3>
+                              <p class="mb-0 mt-2 text-center text-success">23.81% <span class="text-black ms-1"><small>(30 days)</small></span></p>
+  
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <p class="card-title">Report details</p>
+                              <!-- <p class="text-muted font-weight-light">Received overcame oh sensible so at an. Formed do change merely to county it. Am separate contempt domestic to to oh. On relation my so addition branched.</p> -->
+                              <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
+                              <canvas id="sales-chart"></canvas>
+                            </div>
+                            <div class="card border-right-0 border-left-0 border-bottom-0">
+                              <div class="d-flex justify-content-center justify-content-md-end">
+                                <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                                  <button class="btn btn-lg btn-outline-light dropdown-toggle rounded-0 border-top-0 border-bottom-0" type="button" id="dropdownMenuDate2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Today
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
+                                    <a class="dropdown-item" href="#">January - March</a>
+                                    <a class="dropdown-item" href="#">March - June</a>
+                                    <a class="dropdown-item" href="#">June - August</a>
+                                    <a class="dropdown-item" href="#">August - November</a>
+                                  </div>
+                                </div>
+                                <button class="btn btn-lg btn-outline-light text-primary rounded-0 border-0 d-none d-md-block" type="button"> View all </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                          <div class="card border-bottom-0">
+                            <div class="card-body pb-0">
+                              <p class="card-title">Purchases</p>
+                              <p class="text-muted font-weight-light">Find a detailed breakdown of the client purchases</p>
+                              <div class="d-flex flex-wrap mb-5">
+                                <div class="me-5 mt-3">
+                                  <p class="text-muted">Status</p>
+                                  <h3>362</h3>
+                                </div>
+                                <div class="me-5 mt-3">
+                                  <p class="text-muted">New users</p>
+                                  <h3>187</h3>
+                                </div>
+                                <div class="me-5 mt-3">
+                                  <p class="text-muted">Chats</p>
+                                  <h3>524</h3>
+                                </div>
+                                <div class="mt-3">
+                                  <p class="text-muted">Feedbacks</p>
+                                  <h3>509</h3>
+                                </div> 
+                              </div>
+                            </div>
+                            <canvas id="order-chart" class="w-100"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!--  -->
+                        <div class="col-md-5 grid-margin stretch-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title">To Do Lists</h4>
+                                                <!-- <div class="list-wrapper pt-2"> -->
+                                                    <div class="d-flex flex-column-reverse todo-list todo-list-custom">
+                                                        <!-- <li > -->
+                                                            <div class="form-check form-check-flat">
+                                                                <label class="form-check-label">
+                                                                    <input class="checkbox" type="checkbox">
+                                                                    Call or send emails to inactive members
+                                                                </label>
+                                                            </div>
+                                                            <i class="delete-sign--v1 ti-trash"></i>
+                                                        <!-- </li> -->
+                                                        <!-- <li class="completed"> -->
+                                                            <div class="form-check form-check-flat">
+                                                                <label class="form-check-label">
+                                                                    <input class="checkbox" type="checkbox" checked>
+                                                                    See The Unmatched Beauty Of The Great Lakes
+                                                                </label>
+                                                            </div>
+                                                            <!-- <i class="remove ti-trash"></i> -->
+                                                        <!-- </li> -->
+                                                        <!-- <li> -->
+                                                            <div class="form-check form-check-flat">
+                                                                <label class="form-check-label">
+                                                                    <input class="checkbox" type="checkbox">
+                                                                    Copper Canyon
+                                                                </label>
+                                                            </div>
+                                                            <i class="remove ti-trash"></i>
+                                                        
+                                                            <div class="form-check form-check-flat">
+                                                                <label class="form-check-label">
+                                                                    <input class="checkbox" type="checkbox" checked>
+                                                                    Top Things To See During A Holiday In Hong Kong
+                                                                </label>
+                                                            </div>
+                                                            <i class="remove ti-trash"></i>
+                                                        
+                                                            <div class="form-check form-check-flat">
+                                                                <label class="form-check-label">
+                                                                    <input class="checkbox" type="checkbox">
+                                                                    Disburse funds to hospitals
+                                                                </label>
+                                                            </div>
+                                                    </div>
+                                                            
+                              </div>
+                              <div class="add-items d-flex mb-0 mt-4">
+                                                    <input type="text" class="form-control todo-list-input me-2"  placeholder="Add new task">
+                                                    <button class="add btn btn-icon text-white todo-list-add-btn bg-primary" placeholder="Add">Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
+                          <div class="card position-relative">
+                            <div class="card-body">
+                              <p class="card-title">Detailed Report</p>
+                              <div class="row">
+                               
+                                <div></div><br>
+                                <div class="col-md-12 col-xl-9">
+                                  <div class="row">
+                                    <div class="col-md-6 mt-3 col-xl-5">
+                                      <canvas id="north-america-chart"></canvas>
+                                      <div id="north-america-legend"></div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-7">
+                                      <div class="table-responsive mb-3 mb-md-0">
+                                        <table class="table table-borderless report-table">
+                                          <tr>
+                                            <td class="text-muted">Busia</td>
+                                            <td class="w-100 px-0">
+                                              <div class="progress progress-md mx-4">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td><h5 class="font-weight-bold mb-0">5240</h5></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-muted">Nairobi</td>
+                                            <td class="w-100 px-0">
+                                              <div class="progress progress-md mx-4">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td><h5 class="font-weight-bold mb-0">72209</h5></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-muted">Mombasa</td>
+                                            <td class="w-100 px-0">
+                                              <div class="progress progress-md mx-4">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td><h5 class="font-weight-bold mb-0">2307</h5></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-muted">Bungoma</td>
+                                            <td class="w-100 px-0">
+                                              <div class="progress progress-md mx-4">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td><h5 class="font-weight-bold mb-0">9453</h5></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-muted">Machakos</td>
+                                            <td class="w-100 px-0">
+                                              <div class="progress progress-md mx-4">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td><h5 class="font-weight-bold mb-0">5538</h5></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-muted">Kisumu</td>
+                                            <td class="w-100 px-0">
+                                              <div class="progress progress-md mx-4">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td><h5 class="font-weight-bold mb-0">2912</h5></td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                     
+                
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © NHIS 2023</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js?h=e2b0d57f2c4a9b0d13919304f87f79ae"></script>
+    <script src="assets/js/theme.js?h=79f403485707cf2617c5bc5a2d386bb0"></script>
+  <script src="vendors/base/vendor.bundle.base.js"></script>
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <!-- <script src="js/template.js"></script> -->
+  <script src="js/todolist.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
