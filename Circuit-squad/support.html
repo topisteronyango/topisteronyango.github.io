@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>NHIS</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=cb606d99bb2418df19b6bc818b41e412">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min2.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body id="page-top">
+<div id="wrapper">
+    <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+        <div class="container-fluid d-flex flex-column p-0 sticky-top"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                <div class="sidebar-brand-icon rotate-n-15"><img src="https://img.icons8.com/avantgarde/55/null/heart-with-pulse.png"/></div>
+                <div class="sidebar-brand-text mx-3"><span>NHIS</span></div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <ul class="navbar-nav text-light" id="accordionSidebar">
+                <li class="nav-item"><a class="nav-link active" href="doctor.html"><i class="fas fa-tachometer-alt"></i><span>Doctor Dashboard</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="patient.html"><i class="fas fa-tachometer-alt"></i><span>Patient Dashboard</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="./Insurance/template/insurance.html"><i class="fas fa-tachometer-alt"></i><span>Insurance Dashboard</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="plist.html"><i class="fas fa-table"></i><span>Patients</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="doctorlist.html"><i class="fas fa-table"></i><span>Doctors</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="chat.html"><i class="fas fa-comments"></i><span>Chat</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="calendar.html"><i class="fas fa-calendar-days"></i><span>Calendar</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="support.html"><i class="fas fa-headset"></i><span>Support</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="settings.html"><i class="fas fa-cogs"></i><span>Settings</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-right-from-bracket"></i><span>Log Out</span></a></li>
+            </ul>
+            <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+        </div>
+    </nav>
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+            <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar">
+                <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                    <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                    </form>
+                    <ul class="navbar-nav flex-nowrap ms-auto">
+                        <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="me-auto navbar-search w-100">
+                                    <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                        <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">Alerts Center</h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">December 12th, 2021</span>
+                                            <p>A new monthly report is ready to download!</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">January 27th, 2022</span>
+                                            <p>Your Health Insurance payment info has been updated</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="me-3">
+                                            <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                        </div>
+                                        <div><span class="small text-gray-500">May 2nd, 2022</span>
+                                            <p>Dr. Nelson Kaviha approoved your appointment request.</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                    <h6 class="dropdown-header">Alerts Center</h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Hi there! I have accepted the appointment request you made for the dental checkup.</span></div>
+                                            <p class="small text-gray-500 mb-0">Emily Ndambuki - 58m</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112">
+                                            <div class="status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>We have approved the Health Insurance request you made for the surgery.</span></div>
+                                            <p class="small text-gray-500 mb-0">NHIF - 1d</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3">
+                                            <div class="bg-warning status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Last month&#39;s diagnosis looks great, I am very happy with the response so far, keep taking the medication!</span></div>
+                                            <p class="small text-gray-500 mb-0">Dr. Edgar Lumumba - 2d</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg?h=35dc45edbcda6b3fc752dab2b0f082ea">
+                                            <div class="bg-success status-indicator"></div>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <div class="text-truncate"><span>Your monthly health insurance transaction reports are available for download.</span></div>
+                                            <p class="small text-gray-500 mb-0">NHIS Team · 2w</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="chat.html">Show All Messages</a>
+                                </div>
+                            </div>
+                            <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Moses Mtengo</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar3.jpeg"></a>
+                                <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="settings.html"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page projects-page">
+                <section class="portfolio-block projects-cards">
+                    <div class="container">
+                        <div class="heading"><h2>Health Articles.</h2></div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0"><a href="https://www.who.int/health-topics/cancer#tab=tab_1"><img class="card-img-top scale-on-hover" src="assets/img/health/cancer.jpg" alt="Card Image"></a>
+                                    <div class="card-body"><h6><a href="https://www.who.int/health-topics/cancer#tab=tab_1">Cancer Awareness</a></h6><p class="text-muted card-text">Cancer is the second leading cause of death globally...</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0"><a href="https://www.who.int/news-room/fact-sheets/detail/mental-disorders"><img class="card-img-top scale-on-hover" src="assets/img/health/mentalhealth.jpg" alt="Card Image"></a>
+                                    <div class="card-body"><h6><a href="https://www.who.int/news-room/fact-sheets/detail/mental-disorders">Mental Health</a></h6><p class="text-muted card-text">Psychological well-being.</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0"><a href="https://www.healthline.com/health/food-nutrition#Conditions"><img class="card-img-top scale-on-hover" src="assets/img/health/food&nutrition.jpg" alt="Card Image"></a>
+                                    <div class="card-body"><h6><a href="https://www.healthline.com/health/food-nutrition#Conditions">Food and Nutrition</a></h6><p class="text-muted card-text">Smart nutrition and food choices can help prevent disease.</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0"><a href="https://www.medicalnewstoday.com/articles/153390#finding-time-to-exercise"><img class="card-img-top scale-on-hover" src="assets/img/health/fitness.jpg" alt="Card Image"></a>
+                                    <div class="card-body"><h6><a href="https://www.medicalnewstoday.com/articles/153390#finding-time-to-exercise">Fitness and Exercise</a></h6><p class="text-muted card-text">Taking part in exercise of any intensity every day is essential for preventing a range of diseases and other health issues.</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0"><a href="https://www.medicinenet.com/drug_abuse/article.htm"><img class="card-img-top scale-on-hover" src="assets/img/health/drug.jpg" alt="Card Image"></a>
+                                    <div class="card-body"><h6><a href="https://www.medicinenet.com/drug_abuse/article.htm">Drug Abuse and Addiction</a></h6><p class="text-muted card-text">Drug abuse and addiction is a condition characterized by a self-destructive pattern of using a substance that leads to....</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0"><a href="https://www.healthline.com/health/hiv-aids"><img class="card-img-top scale-on-hover" src="assets/img/health/AIDS.jpg" alt="Card Image"></a>
+                                    <div class="card-body"><h6><a href="https://www.healthline.com/health/hiv-aids">HIV and AIDS</a></h6><p class="text-muted card-text">AIDS is a disease that can develop in people who have the HIV virus.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <section class="py-5">
+                <div class="container py-5">
+                    <div class="row mb-5">
+                        <div class="col-md-8 col-xl-6 text-center mx-auto">
+                            <p class="fw-bold text-success mb-2">Contacts</p>
+                            <h2 class="fw-bold">How you can reach us</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 col-xl-4">
+                            <div>
+                                <form class="p-3 p-xl-4" method="post">
+                                    <!-- Start: Success Example -->
+                                    <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Name"></div><!-- End: Success Example -->
+                                    <!-- Start: Error Example -->
+                                    <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email"></div><!-- End: Error Example -->
+                                    <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea></div>
+                                    <div><button class="btn btn-primary shadow d-block w-100" type="submit">Send </button></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
+                            <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start h-100">
+                                <div class="d-flex align-items-center p-3">
+                                    <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone">
+                                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                                        </svg></div>
+                                    <div class="px-2">
+                                        <h6 class="fw-bold mb-0">Phone</h6>
+                                        <p class="text-muted mb-0">+254754836496</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center p-3">
+                                    <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope">
+                                            <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+                                        </svg></div>
+                                    <div class="px-2">
+                                        <h6 class="fw-bold mb-0">Email</h6>
+                                        <p class="text-muted mb-0">mosesmtengo@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center p-3">
+                                    <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pin">
+                                            <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354zm1.58 1.408-.002-.001.002.001zm-.002-.001.002.001A.5.5 0 0 1 6 2v5a.5.5 0 0 1-.276.447h-.002l-.012.007-.054.03a4.922 4.922 0 0 0-.827.58c-.318.278-.585.596-.725.936h7.792c-.14-.34-.407-.658-.725-.936a4.915 4.915 0 0 0-.881-.61l-.012-.006h-.002A.5.5 0 0 1 10 7V2a.5.5 0 0 1 .295-.458 1.775 1.775 0 0 0 .351-.271c.08-.08.155-.17.214-.271H5.14c.06.1.133.191.214.271a1.78 1.78 0 0 0 .37.282z"></path>
+                                        </svg></div>
+                                    <div class="px-2">
+                                        <h6 class="fw-bold mb-0">Location</h6>
+                                        <p class="text-muted mb-0">Old Malindi Rd, Bamburi, Mombasa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End: Contact Details -->
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © NHIS 2023</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js?h=e2b0d57f2c4a9b0d13919304f87f79ae"></script>
+    <script src="assets/js/theme.js?h=79f403485707cf2617c5bc5a2d386bb0"></script>
+</div>
+</body>
+
+</html>

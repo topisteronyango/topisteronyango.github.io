@@ -1,0 +1,152 @@
+/* General Styles */
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form-control {
+    margin-bottom: 6px;
+}
+
+/* Doctor List */
+.doctor-list {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+.row{
+    margin-left: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+.navstaff{
+    position: relative;
+    height: 40px;
+    width: 400px;
+
+}
+.but{
+    position: absolute;
+    height: 35px;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: blue;
+}
+
+.medform{
+    text-decoration: none;
+}
+
+.but-class {
+    height: 80px;
+    position: sticky;
+    top: 6;
+    left: 0;
+    right: 0;
+    margin-bottom: 10px;
+}
+
+.some-btn {
+    border-radius: 20px;
+  }
+
+  .card-img-top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: cover; 
+    width: 200px; 
+    height: 200px;
+  }
+  
+
+  .btn:hover {
+    background-color: #0562c6;
+    color: #fff;
+    border-radius: 20px;
+  }
+  
+  
+.nav-div{
+    margin-left: 700px;
+}
+.nav-doc{
+    margin-left: 50px;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cont1{
+    margin-top: 15px;
+    width: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .btn-class{
+    width: 300px;
+    margin-top: 20px;
+    margin-left:-15px;
+    padding: 0px;
+    align-items: center;
+    
+  }
+  .spec-class{
+    width: 200px;
+  }
+  
+
+  .vl {
+    border-left: 1px solid gray;
+    height: 50px;
+  }
+  
+
+
+
+@media (max-width: 576px) {
+.card-img-top {
+height: 200px;
+}
+.card-title {
+    font-size: 1rem;
+}
+
+.card-text {
+    font-size: 0.8rem;
+}
+
+.btn-primary {
+    font-size: 0.8rem;
+}
+}
